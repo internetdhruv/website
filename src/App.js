@@ -11,6 +11,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import ReactGA from 'react-ga';
 import dotenv from 'dotenv';
+import { createBrowserHistory } from 'history';
 
 import { lightTheme, darkTheme } from './components/Themes';
 import { GlobalStyle } from './styles';
@@ -26,6 +27,11 @@ dotenv.config();
 
 if (process.env.GA_TRACKING_CODE) {
   ReactGA.initialize(process.env.GA_TRACKING_CODE);
+  const history = createBrowserHistory();
+  history.listen((location) => {
+    ReactGA.set({ page: location.pathname });
+    ReactGA.pageview(location.pathname);
+  });
 }
 
 library.add(
