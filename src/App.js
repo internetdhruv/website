@@ -11,7 +11,6 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import ReactGA from 'react-ga';
 import dotenv from 'dotenv';
-import { createBrowserHistory } from 'history';
 
 import { lightTheme, darkTheme } from './components/Themes';
 import { GlobalStyle } from './styles';
