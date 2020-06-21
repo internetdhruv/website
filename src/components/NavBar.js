@@ -76,6 +76,12 @@ const Transition = styled.div`
   }
 `;
 
+const MobileThemeSwitcher = styled.div`
+  ${breakpoints.md`
+    display: none;
+  `}
+`;
+
 const NavBar = (props) => {
   const [show, setShow] = useState(true);
   const [scrollPos, setScrollPos] = useState(0);
@@ -151,6 +157,16 @@ const NavBar = (props) => {
               pointerCursor
             />
           </NavBarLinks>
+          <MobileThemeSwitcher>
+            <Icon
+              src={props.theme.themeSwitchIcon}
+              alt="Switch Themes"
+              height={20}
+              width={20}
+              onClick={props.themeChanger}
+              pointerCursor
+            />
+          </MobileThemeSwitcher>
         </NavBarDiv>
       </NavBarContainer>
     </Transition>
