@@ -15,6 +15,9 @@ const ProjectsContainer = styled.div`
   ${breakpoints.md`
     width: ${sizes.Containers.width.wide}%;
   `}
+  ${breakpoints.xxl`
+    width: ${sizes.Containers.width.xwide}%;
+  `}
 `;
 
 const ContentContainer = styled.div`

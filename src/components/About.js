@@ -16,6 +16,9 @@ const AboutContainer = styled.div`
   ${breakpoints.md`
     width: ${sizes.Containers.width.wide}%;
   `}
+  ${breakpoints.xxl`
+    width: ${sizes.Containers.width.xwide}%;
+  `}
 `;
 
 const SubText = styled(Text)`
@@ -35,28 +38,35 @@ const EducationDisplayer = styled.div`
   margin-top: 20px;
   display: flex;
   flex-direction: column;
-  width: 600px;
   p,
   h5,
   ul,
   li {
     background: none;
   }
+  ${breakpoints.md`
+    width: 600px;
+  `}
 `;
 
 const TitleSection = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   background: ${(props) => props.theme.gray4};
   padding: 10px;
   text-align: center;
   img {
     background: none;
-    margin-right: 30px;
   }
   a {
     background: none;
   }
+  ${breakpoints.md`
+    flex-direction: row;
+    img{
+      margin-right: 30px;
+    }
+  `}
 `;
 
 const EducationTitleText = styled.div`
@@ -71,6 +81,9 @@ const Description = styled.div`
   padding: 10px;
   ul {
     margin-top: 10px;
+  }
+  li {
+    color: ${(props) => props.theme.primaryColor};
   }
 `;
 

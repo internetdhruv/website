@@ -16,6 +16,9 @@ const ContactContainer = styled.div`
   ${breakpoints.md`
     width: ${sizes.Containers.width.wide}%;
   `}
+  ${breakpoints.xxl`
+    width: ${sizes.Containers.width.xwide}%;
+  `}
 `;
 
 const TitleText = styled(Text)`
@@ -34,20 +37,31 @@ const PlatformsContainer = styled.div`
     background: none;
   }
   display: flex;
-  width: 360px;
+  flex-direction: column;
+  width: 160px;
   overflow: auto;
   justify-content: space-between;
   margin-top: 25px;
   padding: 5px;
+  ${breakpoints.md`
+    flex-direction: row;
+    width: 360px;
+  `}
 `;
 
 const Platform = styled.div`
   display: flex;
 
+  margin-top: 5px;
   align-items: center;
   ${Text} {
     margin-left: 7px;
+    margin-right: 15px;
+    ${breakpoints.md`
+      margin-right: 0;
+    `}
   }
+  justify-content: space-between;
 `;
 
 const Contact = () => {
@@ -80,25 +94,6 @@ const Contact = () => {
           </Platform>
         ))}
       </PlatformsContainer>
-      {/* <PlatformsContainer>
-        <ul>
-          {contact.map((ct) => (
-            <li>
-              <Platform>
-                <a
-                  href={ct.link}
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  name={ct.altText}
-                >
-                  <FAIcon icon={ct.FAIconSrc} size="2x" />
-                </a>
-                <Text>{ct.name}</Text>
-              </Platform>
-            </li>
-          ))}
-        </ul>
-      </PlatformsContainer> */}
     </ContactContainer>
   );
 };

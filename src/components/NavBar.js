@@ -20,13 +20,19 @@ const NavBarContainer = styled.div`
   width: ${sizes.Containers.width.normal}%;
   margin: 0 auto;
   margin-left = 50%;
+
   ${breakpoints.md`
     width: ${sizes.Containers.width.wide}%;
   `}
+  ${breakpoints.xxl`
+    width: ${sizes.Containers.width.xwide}%;
+  `}
+  ${(props) =>
+    props.theme.background && `background: ${props.theme.background}`};
 `;
 
 const NavBarLinks = styled.div`
-  display: flex;
+  display: none;
   position: relative;
   margin-left: 20px;
   overflow-x: auto;
@@ -39,6 +45,10 @@ const NavBarLinks = styled.div`
   a {
     text-decoration: none;
   }
+
+  ${breakpoints.md`
+    display: flex;
+  `}
 `;
 
 const NavBarDiv = styled.div`

@@ -3,6 +3,7 @@ export default {
     width: {
       normal: 90,
       wide: 80,
+      xwide: 75,
     },
   },
   NavBar: {

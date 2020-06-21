@@ -3,16 +3,21 @@ import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import Text from './Text';
+import { breakpoints } from '../styles';
 
 import { SelectionContext } from './Experience';
 
 const ExperienceDisplayerContainer = styled.div`
-  width: 50%;
   height: 300px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  margin-left: 140px;
+  margin-top: 40px;
+  ${breakpoints.lg`
+    margin-top: 0;
+    width: 50%;
+    margin-left: 140px;
+  `}
 `;
 
 const Title = styled.div`

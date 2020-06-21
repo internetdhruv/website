@@ -27,13 +27,19 @@ const ExperienceContainer = styled.div`
   ${breakpoints.md`
     width: ${sizes.Containers.width.wide}%;
   `}
+  ${breakpoints.xxl`
+    width: ${sizes.Containers.width.xwide}%;
+  `}
 `;
 
 const ContentBlock = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   margin-top: 50px;
   align-items: center;
+  ${breakpoints.lg`
+    flex-direction: row;
+  `}
 `;
 
 export const SelectionContext = React.createContext();

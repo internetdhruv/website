@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+import { breakpoints } from '../styles';
 import Text from './Text';
 import Icon from './Icon';
 
@@ -11,10 +12,12 @@ const ProjectContainer = styled.div`
   margin-bottom: 40px;
   width: 500px;
   height: 500px;
-  margin-right: 40px;
   background: ${(props) => props.theme.gray5};
   padding: 10px;
   text-align: center;
+  ${breakpoints.md`
+    margin-right: 40px;
+  `}
 `;
 
 const ImageContainer = styled.div`

@@ -4,6 +4,8 @@ import themeSwitchDark from '../assets/icons/theme-switch-dark.svg';
 import themeSwitchLight from '../assets/icons/theme-switch-light.svg';
 import downwardChevronLight from '../assets/icons/downward-chevron-light.svg';
 import downwardChevronDark from '../assets/icons/downward-chevron-dark.svg';
+import navbarOpenDark from '../assets/icons/ham-dark.svg';
+import navbarOpenLight from '../assets/icons/ham-light.svg';
 
 export const lightTheme = {
   logoSrc: lightLogo,
@@ -13,6 +15,7 @@ export const lightTheme = {
   background: '#fff',
   themeSwitchIcon: themeSwitchLight,
   downwardChevron: downwardChevronLight,
+  mobileNavbarIcon: navbarOpenLight,
   gray1: '#8e8e93',
   gray2: '#aeaeb2',
   gray3: '#c7c7cc',
@@ -28,6 +31,7 @@ export const darkTheme = {
   background: '#000',
   themeSwitchIcon: themeSwitchDark,
   downwardChevron: downwardChevronDark,
+  mobileNavbarIcon: navbarOpenDark,
   gray1: '#838393',
   gray2: '#636366',
   gray3: '#48484a',
