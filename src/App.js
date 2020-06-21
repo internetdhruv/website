@@ -9,6 +9,8 @@ import {
   faStar,
   faCodeBranch,
 } from '@fortawesome/free-solid-svg-icons';
+import ReactGA from 'react-ga';
+import dotenv from 'dotenv';
 
 import { lightTheme, darkTheme } from './components/Themes';
 import { GlobalStyle } from './styles';
@@ -19,6 +21,12 @@ import Experience from './components/Experience';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+
+dotenv.config();
+
+if (process.env.GA_TRACKING_CODE) {
+  ReactGA.initialize(process.env.GA_TRACKING_CODE);
+}
 
 library.add(
   faChevronCircleRight,
