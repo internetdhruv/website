@@ -11,27 +11,48 @@ import { hero } from '../config';
 const HeroContainer = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 300px auto 0px auto;
+  margin: 250px auto 0px auto;
   width: ${sizes.Containers.width.normal}%;
   text-align: center;
 
   ${breakpoints.md`
     width: ${sizes.Containers.width.wide}%;
+    margin-top: 300px;
   `}
   ${breakpoints.xxl`
     width: ${sizes.Containers.width.xwide}%;
   `}
 `;
 
+const Title = styled.div`
+  * {
+    font-size: 50px;
+  }
+  ${breakpoints.md`
+    * {
+      font-size: 90px;
+    }
+  `}
+`;
+
 const SubTitleContainer = styled.div`
   display: flex;
   flex-direction: row;
-  width: 50%;
+  width: 100%;
   margin-top: 15px;
   margin-left: auto;
   margin-right: auto;
   align-items: center;
   justify-content: space-around;
+  * {
+    font-size: 9px;
+  }
+  ${breakpoints.md`
+    width: 50%;
+    * {
+      font-size: 14px;
+    }
+  `}
 `;
 
 const BottomContainer = styled.div`
@@ -53,9 +74,11 @@ const ScrollPrompt = styled(Text)`
 
 const Hero = (props) => (
   <HeroContainer>
-    <Text weight="semibold" size="90">
-      {hero.name}
-    </Text>
+    <Title>
+      <Text weight="semibold" size="90">
+        {hero.name}
+      </Text>
+    </Title>
     <SubTitleContainer>
       {hero.tags.map((tag, index) => (
         <Text key={index}>{tag}</Text>
