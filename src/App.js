@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { ThemeProvider } from 'styled-components';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
@@ -27,11 +27,6 @@ dotenv.config();
 
 if (process.env.REACT_APP_GA_TRACKING_CODE) {
   ReactGA.initialize(process.env.REACT_APP_GA_TRACKING_CODE);
-  const history = createBrowserHistory();
-  history.listen((location) => {
-    ReactGA.set({ page: location.pathname });
-    ReactGA.pageview(location.pathname);
-  });
 }
 
 library.add(
@@ -63,10 +58,13 @@ const App = () => {
   const [theme, setTheme] = useState(
     localStorage.getItem('com.dhruvsharma.theme') || 'light'
   );
-  React.useEffect(() => {
+  useEffect(() => {
     localStorage.setItem('com.dhruvsharma.theme', theme);
     changeFavicon((theme === 'light' ? lightTheme : darkTheme).logoSrc);
   }, [theme]);
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  });
   const themeToggle = () => {
     theme === 'light' ? setTheme('dark') : setTheme('light');
   };
