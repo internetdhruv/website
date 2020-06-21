@@ -25,8 +25,8 @@ import Footer from './components/Footer';
 
 dotenv.config();
 
-if (process.env.GA_TRACKING_CODE) {
-  ReactGA.initialize(process.env.GA_TRACKING_CODE);
+if (process.env.REACT_APP_GA_TRACKING_CODE) {
+  ReactGA.initialize(process.env.REACT_APP_GA_TRACKING_CODE);
   const history = createBrowserHistory();
   history.listen((location) => {
     ReactGA.set({ page: location.pathname });
