@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45">
   <g id="light-logo" transform="translate(-205 -17)">
-    <g id="Rectangle_1" data-name="Rectangle 1" transform="translate(210 22)" fill="#fff" stroke="#000" stroke-width="1.5">
+    <g id="Rectangle_1" data-name="Rectangle 1" transform="translate(210 22)" fill="rgba(255,255,255,0)" stroke="#000" stroke-width="1.5">
       <rect width="40" height="40" rx="8" stroke="none"/>
       <rect x="0.75" y="0.75" width="38.5" height="38.5" rx="7.25" fill="none"/>
     </g>
