@@ -22,6 +22,12 @@ export default [
     type: 'internal',
   },
   {
+    name: 'git',
+    path: 'https://git.dhruv-sharma.com',
+    type: 'external',
+    openInNewTab: false,
+  },
+  {
     name: 'resume',
     path: Resume,
     type: 'external',
