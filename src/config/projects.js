@@ -3,8 +3,21 @@ import drugdecider from '../assets/images/drugdecider.png';
 import zombie_dash from '../assets/images/zombie-dash.png';
 import racing_dash from '../assets/images/racing-dashboard.png';
 import bchat from '../assets/images/bchat-logo.png';
+import git_wizard from '../assets/images/git-server-logo.png';
 
 export default [
+  {
+    name: 'Git Server Wizard',
+    projectLink: null,
+    links: {
+      project: 'https://git.dhruv-sharma.com',
+      github: 'https://github.com/dhruvsharma78/git-server-wizard',
+    },
+    description: `An automated script that sets up a private git server on your own VPS or server, along with
+    a public webpage that allows anyone to view your repositories, commits and clone URLs. The script will download,
+    install, and configure all required packages and programs.`,
+    image: git_wizard,
+  },
   {
     name: 'Stock Lookup',
     projectLink: 'https://stock-lookup.netlify.com',
@@ -21,7 +34,7 @@ export default [
   },
   {
     name: 'Zombie Dash',
-    projectLink: 'github',
+    projectLink: null,
     links: {
       project: null,
       github: 'https://github.com/dhruvsharma78/zombie-dash',
