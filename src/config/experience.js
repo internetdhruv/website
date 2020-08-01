@@ -66,7 +66,7 @@ export default [
       `Successfully found and implemented mehods to account for differences in lighting, perspective,
       color and quality and helped developed a text dectection model. `,
       `Developed a custom program to split proprietary ML datasets into testing and training data`,
-      `Researched and implemented a service to stream video files to a server and process data using a 
+      `Researched and implemented a service to stream video files to a server and process data using a
       text detection and recognition model while simultaneously downloading it.`,
       `Researched ways to deduplicate results from the ML models; specifically finding ways to recognize
       that an object has already been recognized.`,
@@ -153,7 +153,7 @@ export default [
       country: 'USA',
     },
     description: [
-      `Managing the production and deployment of bchat, a new chat app for the 
+      `Managing the production and deployment of bchat, a new chat app for the
           UCLA community focussed on providing a better chat solution that caters to
           the needs of the campus community.`,
     ],
@@ -173,6 +173,6 @@ export default [
       state: 'WA',
       country: 'USA',
     },
-    description: [`Incoming intern at Amazon Web Services`],
+    description: [`SDE Intern at Amazon Web Services`, `Working on the Traffic Management team within AWS Identity and AWS Platform`],
   },
 ];

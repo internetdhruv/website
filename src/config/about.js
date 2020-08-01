@@ -1,8 +1,8 @@
 import uclaLogo from '../assets/images/ucla-logo.png';
 
 export default {
-  mainText: `Hi! I'm a Computer Science student at the University of California, Los Angeles. I 
-    specialize in image processing, text detection/recognition and systems. I'm 
+  mainText: `Hi! I'm a Computer Science student at the University of California, Los Angeles. I
+    specialize in image processing, text detection/recognition and systems. I'm
     also interested in data analytics, with an emphasis on its use in the finance industry for
     trading and investing.`,
   subText: `Get in touch with me if you have any opportunities you would like to discuss, or
@@ -25,7 +25,7 @@ export default {
       start: 2018,
       end: 2022,
       GPA: null,
-      about: `I'm currently studying Computer Science at UCLA with a techinical breadth in
+      about: `I'm currently studying Computer Science at UCLA with a technical breadth in
         Engineering Finance.`,
       classes: [
         'Operating Systems',
