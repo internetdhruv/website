@@ -173,6 +173,6 @@ export default [
       state: 'WA',
       country: 'USA',
     },
-    description: [`SDE Intern at Amazon Web Services`, `Working on the Traffic Management team within AWS Identity and AWS Platform`],
+    description: [`SDE Intern at Amazon Web Services`, `Working on the Traffic Engineering team within AWS Identity and AWS Platform`],
   },
 ];
