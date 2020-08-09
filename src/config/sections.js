@@ -1,4 +1,4 @@
-import Resume from '../files/Dhruv_Sharma_v9.pdf';
+import Resume from '../files/Dhruv_Sharma_v11.pdf';
 
 export default [
   {
